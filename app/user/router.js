@@ -10,9 +10,8 @@ router.get('/', controller.getUserList);
 router.get('/:id', controller.getUserDetail);
 
 
-// define the about route
 router.get('/about', function (req, res) {
-  res.send('Kullanıcılar hakkında');
+  res.send('About');
 });
 
 
