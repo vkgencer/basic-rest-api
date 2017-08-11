@@ -1,8 +1,7 @@
 var express = require('express'),    
 	app     = express(),         
 	router  = express.Router(),  
-	request = require('request')
-	request = request.defaults({'proxy': 'http://iproxy.innova.com.tr'});
+	request = require('request'); // proxy: require('request').defaults({'proxy': 'proxy-address'});
 
 var userListUrl = "http://jsonplaceholder.typicode.com/users";
 
@@ -27,5 +26,3 @@ exports.getUserDetail = function(req, res) {
 	}).end()
 
 }
-
-
